@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game"
+    android:orientation="vertical"
+    android:background="#000000">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:text="Let's Play"
+        android:textColor="#FFFFFF"
+        android:textSize="46sp"
+        app:fontFamily="cursive" />
+    <Button
+        android:id="@+id/fourGridButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/fiveGridButton"
+        android:text="4*4 grid"
+        android:paddingBottom="20dp"
+        android:onClick="fourSquare"/>
+
+    <Button
+        android:id="@+id/fiveGridButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5*5 grid"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="20dp"
+        android:onClick="fiveSquare"/>
+    <Button
+        android:id="@+id/sixGridButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6*6 grid"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fiveGridButton"
+        android:onClick="sixSquare"/>
+    <com.example.dotsandboxes.fourGrid
+        android:id="@+id/fourGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.example.dotsandboxes.fiveGrid
+        android:id="@+id/fiveGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.example.dotsandboxes.sixGrid
+        android:id="@+id/sixGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
